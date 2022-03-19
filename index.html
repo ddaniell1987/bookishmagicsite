@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bookish Magic</title>
+        <!--Link for stylesheet/CSS-->
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
     </head>
     <body>
     <header>
-        <a href="#" class="logo">Bookish Magic</a>
+        <a href="#" class="logo">Bookish<h4 class="rainbow-letters"><span>M</span><span>A</span><span>G</span><span>I</span><span>C</span></h4></a>
         <div  class="menu"></div>
-    </header>
-    <ul class="navigation">
-        <li><a href="#home">Home</a></li>
+    
+    <nav class="navigation" id="myTopnav">
+        <ul>
+        <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#post">Post</a></li>
         <li><a href="#contact">Contact</a></li>
-    </ul>
-
+        </ul>
+    </nav>
+    <!--Login-->
+    <a href="#" class="login">Login</a>
+    </header>
         <!--Banner-->
     <section class="banner" id="home">
         <img src="./images/banner.jpg" class="cover">
@@ -34,54 +43,134 @@
             <div class="contentBx">
             <div class="content">
                 <p>Hello! I'm Dominique.
-                I love to read. This blog serves as a project for my software engineering portfolio,
-                and my blog in order to review the books in my life. Reading has always been a source of enjoyment for me.
-                I love the enjoyment that I received from being transported into the stories.
-                <br></br>
-                Contact me if your interested in talking to me.</p>
+                I love to read --I am a true nerd &#x1f913; <br></br>.From my very first book I was hooked. I typically read about 100+ books per year, always trying to get more books
+                added each year. <br></br> I read just about any genre (haven't really gotten into History though), with my favorite's being Fantasy &#129498;, Thrillers, and Dark Academia. <br></br> Reading has always been a source of enjoyment for me.
+                I love that when I read I am instantly transported into the story, taking each of those adventures right along with 
+                the characters!
+                <br></br>This blog serves as a project for my software engineering portfolio,
+                and my blog in order to review the books in my life.<br></br>
+                
+                Contact me if your interested in talking with me.</p>
             </div>
         <div class="content">
             <div id="imgBx">
-            <img src= "./images/20220315_104722.jpg" class="cover">
+            <img src= "./images/Dominique picture.jpg" class="cover">
             </div>
         </div>
         </div>
-    </section>
-        <!--Latest Blog-->
-    <section class="post" id="post">
-        <div class="title">
-            <h2>Latest Post</h2>
-            <p></p>
+        <!--Latest title section-->
+        <a id="post" href="#post"></a>
+        <section class="latest-title">
+            <div class="title">
+                <h2>Latest Reads</h2>
+                <p>Here are my reviews of my latest reads!</p>
+                
+            </div>  
+        <!--Posts-->
+        <div class="post-filter container">
+            <span class="filter-item active-filter" data-filter='all'><strong>All</strong></span>
+            <span class="filter-item" data-filter='fantasy'><strong>Fantasy</strong></span>
+            <span class="filter-item" data-filter='middle'><strong>Middle Grade</strong></span>
+            <span class="filter-item" data-filter='dark'><strong>Dark Academia</strong></span>
         </div>
-        <div class="contentBx">
-            <div class="postBox">
-                <div class="imgBx">
-                <img src="./images/book1.jpg" class="cover">
+        <section class="post container">
+            <!--Post container 1-->
+            
+            <div class="post-box fantasy">
+                <img src="./images/book1.jpg" alt="" class="post-img">
+                <h2 class="category">Fantasy</h2>
+                <a href="post-page.html" class="post-title">Every Heart a Doorway</a>
+                <p>Seann McGuire</p>
+            </div>
+            <span class="post-date">February 5, 2022</span><br></br>
+            <p class="post-description">This book surprised me I had low expectations going in but as the book progressed it got better and better
+                This book introduces you to characters that have been in other stories. Nancy, who reminds me of Persephone is sent to a "boarding school" after she 
+                returns from time in the underworld. While her parents want her to get better all that Nancy wants to do is return to the Underworld. Along the way she 
+                meets Jack and Jill and others that all have experienced similiar things as Nancy, and they all want to go back to their lands. Do they get their wish. You will just have to read it.
+            </p>  
+                <!--Post Container 2-->
+            <div class="post-box middle">
+                <img src="./images/book2.jpg" alt="" class="post-img">
+                <h2 class="category">Middle Grade</h2>
+                <a href="post-page.html" class="post-title">Harry Potter and the Chamber of Secrets</a>
+                <p>JK Rowling</p>
+            </div>
+            <span class="post-date">Jan 20, 2022</span><br></br>
+            <p class="post-description">Who doesn't know Harry Potter's story. A boy finds out he's a wizard and finds his home in the wizarding world. There are so many funny and adorable scenes in this book that I wish was in the movies.
+                One scene being Sir Nicholas' death day party, and the scenes with Moaning Myrtle. Lockhart was deeper than the movies portrayed, so many wonderful things. Harry Potter is one of those movies that I geek out to and can watch on repeat. 
+                I might go watch it now.
+            </p>  
+                <!--Post 3-->
+                <div class="post-box fantasy">
+                    <img src="./images/book1.jpg" alt="" class="post-img">
+                    <h2 class="category">Fantasy</h2>
+                    <a href="post-page.html" class="post-title"> The Starless Sea</a>
+                    <p>Erin Morganstern</p>
                 </div>
-                <div class="textBx">
-                <h3>The Starless Sea</h3>
-                <a href="#" class="btn">Read More</a>
+                <span class="post-date">Jan 10, 2022</span><br></br>
+                <p class="post-description">Wonderful, lyrical story about stories<br></br>This story has easily become my all-time favorite.
+                This story follows Zachary Ezra Rawlins. One day Zachary goes to his school's library and finds a mysterious book in which he finds a story about himself. Wondering where it came from he starts a 
+                journey that leads him to an ancient magical library far beneath the surface of the Earth. Wondering how his life ended up in the book, he finds clues a bee, a key, and a sword. What Zachary
+                learns of those who made sacrifices to protect these stories takes him on a wonderful ride to not only find himself but love as well.</p>  
+                
+                <!--Post 4-->
+                <div class="post-box dark">
+                    <img src="./images/book1.jpg" alt="" class="post-img">
+                    <h2 class="category">Dark Academia</h2>
+                    <a href="post-page.html" class="post-title"> Ninth House</a>
+                    <p>Leigh Bardugo</p>
                 </div>
-                <div class="postBox extraHeight">
-                    <div class="imgBx">
-                    <img src="./images/book2.jpg" class="cover">
+                <span class="post-date">Jan 1, 2022</span><br></br>
+                <p class="post-description">Dark Story that will keep you on edge<br></br><p>Galaxy "Alex" Stern is a member of Yale's freshman class. While searching for answers, Alex arrives
+                    in New Haven tasked by her mysterious benefactors with monitoring activities of the secret socities. The occult activities are more sinister than Alex thinks. 
+                </p>  
+                
+            </section>
+        </section>
+        <!--contact-->
+        <a id="contact" href="#contact"></a> 
+        <section class="contact" id="contact">
+            <div class="title">
+                <h2>Let's Talk</h2>
+                <p>Let's get to know one another, contact me.</p>
+            </div>
+            
+            <div class="contactForm">
+                <div class="row">
+                    <input type="text" name="" placeholder="First Name">
+                    <input type="text" name="" placeholder="Last Name">
                 </div>
-                <div class="textBx">
-                    <h3>The Starless Sea</h3>
-                    <a href="#" class="btn">Read More</a>
+                <div class="row">
+                    <input type="text" name="" placeholder="Email">
+                    <input type="text" name="" placeholder="Phone Number">
+                </div>
+                <div class="row2">
+                    <textarea placeholder="Message"></textarea>
+                </div>
+                <div class="row2">
+                    <input type="submit" value="send" class="btn">
                 </div>
             </div>
-            <div class="postBox">
-                <div class="imgBx">
-                    <img src="./images/book1.jpg" class="cover">
-                </div>
-                <div class="textBx">
-                    <h3>The Starless Sea</h3>
-                    <a href="#" class="btn">Read More</a>
-                </div>
-        </div>
+        </section>
     </section>
-
-    <link rel="mechanics" href="app.js">
+    <!--Link for JavaScript-->
+    <script src="app.js"></script>
+    <!--footer-->
+    <footer>
+    <div class="footer">
+        <p>&#169; 11 Twenty All Rights Reserved</p>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+           
+        </div>
+    </div>
+    </footer>
+   <!--JQuery CDN-->
+   <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
     </body>
 </html>
